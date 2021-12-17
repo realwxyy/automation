@@ -28,7 +28,7 @@ def packDict(root, path, file_name):
         lyrics = audiofile.tag.lyrics[0].text if len(audiofile.tag.lyrics) > 0 else None
         minute = int(audiofile.info.time_secs/60)
         second = int(audiofile.info.time_secs%60)
-        second = second if second > 10 else '0{0}'.format(second)
+        second = second if second > 9 else '0{0}'.format(second)
         time = '{0}:{1}'.format(minute, second)
         size = round(audiofile.info.size_bytes/1024/1024, 1)
         url = path + file_name
