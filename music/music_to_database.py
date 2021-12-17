@@ -85,8 +85,8 @@ def getOne(root, path, name):
 
 
 if __name__ == '__main__':
-    root = 'D://software/website/dev/static/'
+    root = 'D:/software/website/dev/static/'
     path = 'audio/music/'
-    name = '00b71326580011eca15b00e04c68087b.mp3'
-    execute(root, path)
+    name = '6ce815755f6711ecb316988d46c64192.mp3'
     # getOne(root, path, name)
+    execute(root, path)
